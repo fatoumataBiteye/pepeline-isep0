@@ -1,13 +1,12 @@
 name: Mon premier pipeline
-
-  on:
-    push:
-      workflow_dispatch:
+on:
+push:
+workflow_dispatch:
 jobs:
-  bonjour:
+bonjour:
 runs-on: ubuntu-latest
 steps:
- - name: Dire bonjour
+- name: Dire bonjour
 run: echo "Bonjour ISEP Diamniadio !"
 - name: Présenter la machine
 run: |
